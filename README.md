@@ -59,6 +59,17 @@ npm i
 npm start
 ```
 
+## Compatibility
+In addition to .hbs and .handlebars files, electron-handlebars also is compatible with .html files. If you want to have electron-handlebars work with other file extensions, add it as a separate option in your main.js.
+
+```js
+require('electron-handlebars', ['.ext1', '.ext2'])({
+  // Template bindings go here!
+  title: 'Hello, World!',
+  body: 'The quick brown fox jumps over the lazy dog.',
+});
+```
+
 ## Similar Projects
 
 This library was inspired by the following:
